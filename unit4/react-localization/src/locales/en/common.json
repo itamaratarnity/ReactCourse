@@ -1,0 +1,4 @@
+{
+  "app_name": "My i18n App",
+  "welcome": "Welcome, {{name}}!"
+}

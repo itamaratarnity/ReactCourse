@@ -1,0 +1,82 @@
+/* Counter.css */
+.counter-wrapper {
+  font-family: 'Segoe UI', sans-serif;
+  max-width: 300px;
+  margin: 80px auto;
+  text-align: center;
+  background: #fdfdfd;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  padding: 32px 24px;
+}
+
+.title {
+  margin-top: 0;
+  color: #333;
+}
+
+.counter-display {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #2196f3;
+  margin: 20px 0;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.btn {
+  width: 60px;
+  height: 60px;
+  font-size: 2rem;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.plus {
+  background-color: #4caf50;
+  color: #fff;
+}
+.minus {
+  background-color: #f44336;
+  color: #fff;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.btn:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+* גרדיאנט חדש לכפתורים */
+.plus {
+  background-image: linear-gradient(45deg, #43e97b, #38f9d7);
+  color: #fff;
+}
+.minus {
+  background-image: linear-gradient(45deg, #ff0844, #ffb199);
+  color: #fff;
+}
+
+/* אפקט shake */
+@keyframes shake {
+  0%   { transform: translateX(0); }
+  25%  { transform: translateX(-5px); }
+  50%  { transform: translateX(5px); }
+  75%  { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
+.shake {
+  animation: shake 0.3s ease;
+}

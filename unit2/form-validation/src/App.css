@@ -1,0 +1,79 @@
+/* מיכל הטופס - כרטיס */
+.form-card {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 25px 30px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* כותרת */
+.form-card h2 {
+  margin: 0 0 20px 0;
+  color: #2c3e50;
+  text-align: center;
+}
+
+/* תוויות */
+.form-card label {
+  font-weight: 600;
+  color: #34495e;
+  margin-bottom: 5px;
+}
+
+/* שדות הטקסט */
+.form-card input[type="text"],
+.form-card input[type="email"] {
+  padding: 10px 12px;
+  border: 1.5px solid #bdc3c7;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+/* הדגשת שדה במצב פוקוס */
+.form-card input[type="text"]:focus,
+.form-card input[type="email"]:focus {
+  outline: none;
+  border-color: #2980b9;
+  box-shadow: 0 0 5px rgba(41, 128, 185, 0.4);
+}
+
+/* הודעות שגיאה */
+.form-card .error-msg {
+  color: #e74c3c;
+  font-size: 0.85rem;
+  margin-top: 3px;
+}
+
+/* כפתור השליחה */
+.form-card button {
+  margin-top: 20px;
+  padding: 12px 0;
+  background-color: #2980b9;
+  color: white;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color 0.25s ease;
+}
+
+/* שינוי צבע כפתור במעבר עכבר */
+.form-card button:hover {
+  background-color: #1c5980;
+}
+
+/* הודעת הצלחה */
+.form-card .success-msg {
+  color: #27ae60;
+  font-weight: 600;
+  margin-top: 15px;
+  text-align: center;
+}
